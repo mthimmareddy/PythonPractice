@@ -1,8 +1,6 @@
 import pytest
 
 class Teststringspractice(object):
-
-
     def test_stringOperations(self,s="manju is awesome"):
         """program to check whether the string is Symmetrical or Palindrome
         """
@@ -74,7 +72,6 @@ class Teststringspractice(object):
             res +="".join(i+str(len(list(j))) for i, j in itertools.groupby(test_str))
             print("The Consecutive characters frequency : " + str(res))  # printing result
         '''
-        
         String slicing in Python to rotate a string
         s = "GeeksforGeeks"
         d = 2
@@ -84,26 +81,25 @@ class Teststringspractice(object):
         Right
         Rotation: "ksGeeksforGee"
         '''
-        s = "GeeksforGeeks"
-        d=2
-        print("Left rotation by 2:",s[d:]+s[0:d])
-        print("Right rotation by 2:", s[len(s)-2:] + s[0:len(s)-2])
+            s = "GeeksforGeeks"
+            d=2
+            print("Left rotation by 2:",s[d:]+s[0:d])
+            print("Right rotation by 2:", s[len(s)-2:] + s[0:len(s)-2])
 
-         #String slicing in Python to check if a string can become empty by recursive deletion
-        str1 = "GEEGEEKSKSLKGEEKSeirietGEEKS"
-        sub_str = "GEEKS"
-        str2=""
-        x=1
-        while x<=len(str1) and len(str1)!=0:
-            str1=str1.replace(sub_str,"")
-            x=x+1
-            print(str1,x)
+        #String slicing in Python to check if a string can become empty by recursive deletion
+            str1 = "GEEGEEKSKSLKGEEKSeirietGEEKS"
+            sub_str = "GEEKS"
+            str2=""
+            x=1
+            while x<=len(str1) and len(str1)!=0:
+                str1=str1.replace(sub_str,"")
+                x=x+1
+                print(str1,x)
 
-        if len(str1)==0:
-            print("After replacement:",len(str1),True)
-        else:
-            print("After replacement:", str1, False)
-
+            if len(str1)==0:
+                print("After replacement:",len(str1),True)
+            else:
+                print("After replacement:", str1, False)
 
         '''
         Python program to check if a string has at least one letter and one number
