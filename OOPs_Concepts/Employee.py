@@ -9,6 +9,7 @@ class Employee(object):
         Employee.counter+=1
         self.empId=Employee.counter
         self.name=name
+
         self.age=age
         self.dept=dept
 
@@ -37,6 +38,9 @@ class Sales(Employee):
 
 if __name__=="__main__":
     a=Employee("manju","31","IT")
+    a.counter=12
+    print(a.counter)
+    print(Employee.counter)
     a.setinfo(phone=2435678989)
     b=Employee("radha","33","sales")
     b.setinfo()
