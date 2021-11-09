@@ -2,101 +2,6 @@ Programs = '''
 2021 Examples Interview
 a. Given string print ch and its occurances as output
 example: a="mmmaaannnnnjjuu" Output:"m3a3n5j2u2"
-
-
-1.To Validate the ip adderess
-2.To Validate the mail id
-3.To Validate the US  number
-4.To Count number of lines in file
-5.To count the character in file
-6.To count the  words in file
-7.To remove trailing spaces in string
-8.To remove end and start spaces in string
-9.Find the duplicate words in files, using sets.
-10.Find all the duclicate characters and replace in string
-11.Find all the duplicates in list
-12.Find all duplicate characters in file
-13.Factorial of number without recursion
-14.Find the list of dictionaries and dictionary of list for given text matrix values without any module
-15.Find the list of dictionaries and dictionary of list for given text matrix values using re module
-16.To find Prime Number or not
-17.Demonstarte the classes in python
-18.Demonstarte listsa nd strings in Python
-19.To find squareroot of number
-20.Print the range of numbers 1-100 witout using loops
-21.Given a list,find the avg of list if all the elements present else break
-22.Find a fibonacci series of number without recursion
-23.Find reverse of string
-24.File exists
-25.To find the transpose of matrix
-26.List to set conversion
-27.Accessing the csv
-28.Reverse of string without using other string
-29.To find the maximum element in list and return the value and its index
-30.To find file exists in directory or not
-31.Ifconfig output with different interface name,ip extraction
-32.Reading the csv 
-33.Given list of elements find the largest,second largest and smallest element
-34.Given matrix,find second largest along all columns
-35.Given a list of strings, return the count of the number of strings where the string length is 2 or more and
- the first and last chars of the string are the same.
-Note: python does not have a ++ operator, but += works.
-36.String sorting
-37.Given a list of strings, return a list with the strings in sorted order, except group all the strings that begin with 'x' first.
-38.Sorting a list of numbers
-39.C. sort_last,Given a list of non-empty tuples, return a list sorted in increasing order by the last element in each tuple.
-# e.g. [(1, 7), (1, 3), (3, 4, 5), (2, 2)] yields
-# [(2, 2), (1, 3), (3, 4, 5), (1, 7)]
-40.Given a string s, return a string made of the first 2 and the last 2 chars of the original string, so 'spring' yields 'spng'. However, if the string length
-# is less than 2, return instead the empty string.
-41.Given a string s, return a string where all occurences of its first char have been changed to '*', except do not change the first char itself.
-# e.g. 'babble' yields 'ba**le'
-42.Given strings a and b, return a single string with a and b separated by a space '<a> <b>', except swap the first 2 chars of each string.
-# e.g.'mix', pod' -> 'pox mid' 'dog', 'dinner' -> 'dig donner' Assume a and b are length 2 or more.
-43.Given 2 sorted list, merge into single sorted list
-44.D. Given a list of numbers, return a list where all adjacent == elements have been reduced to a single element, so [1, 2, 2, 3] returns [1, 2, 3]. You may create a new list or
-# modify the passed in list.
-45.Consider dividing a string into two halves.If the length is even, the front and back halves are the same length.
-If the length is odd, we'll say that the extra char goes in the front half. e.g. 'abcde', the front half is 'abc', the back half 'de'. Given 2 strings, a and b, return a string of the form
-#  a-front + b-front + a-back + b-back
-46.Given a string, find the first appearance of the substring 'not' and 'bad'. If the 'bad' follows the 'not', replace the whole 'not'...'bad' substring
-# with 'good'.Return the resulting string.So 'This dinner is not that bad!' yields:This dinner is good!
-47.Given a string, if its length is at least 3,add 'ing' to its end.Unless it already ends in 'ing', in which case add 'ly' instead. If the string length is less than 3, leave it unchanged.
-Return the resulting string.
-48.Remove the duplicates in list
-49.Fibonacci series with recursion
-50.Usage of lamda,map,zip,all,any and filter,pass
-Builtin keywords
--------------------
-lamda expressions
-Zip 
-map
-filter
-any and all
-pass
-51.Sorting using quick sort
-52.Reverse the list 
-53.Merge sort
-54.Web Scarping in python
-55.CSV reading in python without module and with module
-56.Excel reading in python
-57.Difference b/w iteritem amd items
-58.linearsearch on list
-Unit testframework on python #refer sepearate program testframework.py
-54.Collections and use
-binary search
-55.Exceptions is python
-56.Collections in python
-57.classes and inheritance
-58.Direcoty traversersal,cleans the computer,cpu,memory
-59.Generators
-60.Argparser in python demo
-Introduction to data structures
-My code school
-Intro to algorithms
-MIT open course
-Practice on HackerEarth.com,hackerRank.com
-Python related questions ask interview
 '''
 
 
@@ -109,14 +14,11 @@ import sys
 import pytest
 
 class Testpracticecases(object):
-
-
     @pytest.mark.parametrize("test_input,expected", [("mmmaaannnjjjuuu", "m3a3n3j3u3")])
     def test_charcount(self,test_input,expected):
         """
         a. Given string print ch and its occurances as output
         example: a="mmmaaannnnnjjuu" Output:"m3a3n5j2u2"
-
         """
         try:
             import itertools
